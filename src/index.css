@@ -4,8 +4,10 @@
 
   --color-secondary: #eeeeee;
   --color-primary: #5CB270;
+  --color-primary-light: #d4fcdd;
   --color-blue:#3b82f6;
   --color-red:#ef4444;
+  --color-zinc:#9f9fa9;
 }
 
 @layer utilities {
