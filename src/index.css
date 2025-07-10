@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme static {
+
+  --color-secondary: #eeeeee;
+  --color-primary: #5CB270;
+  --color-blue:#3b82f6;
+  --color-red:#ef4444;
+}
+
+@layer utilities {
+  .container {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
