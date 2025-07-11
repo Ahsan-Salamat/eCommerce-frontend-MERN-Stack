@@ -44,7 +44,7 @@ function HeroSec() {
       {dummyData.map((item) => (
         <div
           key={item.id}
-          className="container bg-gradient-to-r from-zinc-300/80 to-zinc-100 rounded-2xl"
+          className="container bg-gradient-to-r from-zinc-300/80 to-zinc-100 rounded-2xl overflow-hidden"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 h-[85vh] container mx-auto px-4">
             {/* Text Section */}
@@ -53,7 +53,7 @@ function HeroSec() {
               <p className="text-2xl md:text-5xl font-bold text-black mb-1">
                 {item.subtitle}
               </p>
-              <h1 className="text-4xl md:text-[120px] lg:text-[150px] font-extrabold tracking-wide bg-gradient-to-r from-primary to-black/30 md:whitespace-nowrap text-transparent bg-clip-text">
+              <h1 className="text-4xl md:text-[100px] lg:text-[150px] font-extrabold tracking-wide bg-gradient-to-r from-primary to-black/30 md:whitespace-nowrap text-transparent bg-clip-text">
                 {item.title}
               </h1>
               <button className="bg-secondary text-xs md:text-xl hover:bg-primary text-white px-4 py-2 mt-4 rounded-xl transition-all duration-300">
