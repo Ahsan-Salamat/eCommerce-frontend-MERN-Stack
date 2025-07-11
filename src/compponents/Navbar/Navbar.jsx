@@ -36,7 +36,7 @@ function Navbar() {
             <button className="relative p-2 hover:text-primary text-zinc">
               <ShoppingCart className="w-6 h-6" />
               <span className="absolute top-1 -right-1 bg-primary text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
-                4
+                1
               </span>
             </button>
             <button className="p-2 hover:text-primary text-zinc">
@@ -92,7 +92,7 @@ function Navbar() {
                   <button className="relative p-2 text-zinc hover:text-primary flex items-center gap-2">
                     <ShoppingCart className="w-6 h-6" />
                     <span className="absolute top-1 -right-1 bg-primary text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">
-                      4
+                      1
                     </span>
                     <span className="text-xl">Cart</span>
                   </button>

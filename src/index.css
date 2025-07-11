@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
 @theme static {
-
-  --color-secondary: #eeeeee;
-  --color-primary: #5CB270;
-  --color-primary-light: #d4fcdd;
-  --color-blue:#3b82f6;
-  --color-red:#ef4444;
-  --color-zinc:#9f9fa9;
+  --color-primary: #ffac1c;
+  --color-secondary: #1E1E1E;
+  --color-blue: #3b82f6;
+  --color-red: #ef4444;
+  --color-zinc: #9f9fa9;
 }
 
 @layer utilities {
@@ -17,3 +15,32 @@
     margin-right: auto;
   }
 }
+
+/* Primary
+Amber Orange
+#FFAC1C
+Buttons, highlights, CTAs
+Secondary
+Deep Charcoal
+#1E1E1E
+Navbar, footer, cards
+Accent
+Coral Red
+#FF5E57
+Sale badges, price drops
+Background
+Off White
+#FAFAFA
+Main background
+Surface/Card
+Light Gray
+#F3F4F6
+Sections, card backgrounds
+Text Primary
+Very Dark Gray
+#1F2937
+Main text
+Text Secondary
+Medium Gray
+#6B7280
+Subtext, captions */
