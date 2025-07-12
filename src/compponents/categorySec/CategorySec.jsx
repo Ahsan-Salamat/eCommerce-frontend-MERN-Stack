@@ -25,7 +25,7 @@ const categories = [
     fontClass: "text-4xl md:text-[100px] lg:text-[120px] md:order-1 top-10 md:top-0 relative tracking-widest",
     gradient: "from-[#1F1C2C] to-[#928DAB]", // gamer vibe
     span: 2,
-    imgClass: "md:order-2 md:right-20 scale-200 md:z-10 md:relative",
+    imgClass: "md:order-2 md:right-20 scale-200 md:z-10 md:relative hover:scale-180",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const categories = [
     customClasses: "items-center justify-center flex-col md:flex-row md:justify-between",
     span: 2,
     fontClass: "text-4xl md:text-[100px] lg:text-[120px] md:order-1 top-10 md:top-0 relative tracking-widest",
-    imgClass: "md:order-2 md:right-30 scale-200 md:z-10 md:relative",
+    imgClass: "md:order-2 md:right-30 scale-200 md:z-10 md:relative hover:scale-180",
   },
   {
     id: 5,

@@ -85,7 +85,7 @@ function HeroSec() {
               <img
                 src={dummyData[current].imageUrl}
                 alt={dummyData[current].title}
-                className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain drop-shadow-2xl"
+                className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain fill-white drop-shadow-xl/50"
               />
             </motion.div>
           </div>
