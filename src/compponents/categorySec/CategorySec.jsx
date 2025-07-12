@@ -32,10 +32,10 @@ const categories = [
     title: "Laptops",
     image: "/category/img2.png",
     gradient: "from-[#232526] to-[#414345]", // dark metallic gray
-    customClasses: "items-center justify-between",
+    customClasses: "items-center justify-center flex-col md:flex-row md:justify-between",
     span: 2,
-    fontClass: "text-[100px] order-1 relative tracking-widest",
-    imgClass: "order-2 right-20 scale-200 z-10 relative",
+    fontClass: "text-4xl md:text-[100px] lg:text-[120px] md:order-1 top-10 md:top-0 relative tracking-widest",
+    imgClass: "md:order-2 md:right-30 scale-200 md:z-10 md:relative",
   },
   {
     id: 5,
