@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,7 +14,10 @@ function HeroSec() {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
+    afterChange: () => {
+      AOS.refreshHard();
+    },
   };
 
   const dummyData = [
@@ -39,17 +44,35 @@ function HeroSec() {
     },
   ];
 
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <Slider className="container py-0" {...settings}>
+    <Slider ref={sliderRef} className="container py-0" {...settings}>
       {dummyData.map((item) => (
         <div
           key={item.id}
           className="container bg-gradient-to-r from-zinc-300/80 to-zinc-100 rounded-2xl overflow-hidden"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 h-[85vh] container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 h-[90%] md:h-[85vh] container mx-auto px-4">
             {/* Text Section */}
-            <div className="flex flex-col items-start gap-3 justify-center text-left order-2 sm:order-1 max-w-xl relative z-10">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">{item.company}</h3>
+            <div
+              className="flex flex-col items-start gap-3 justify-center text-left order-2 sm:order-1 max-w-xl relative z-10"
+              data-aos="fade-right"
+            >
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                {item.company}
+              </h3>
               <p className="text-2xl md:text-5xl font-bold text-black mb-1">
                 {item.subtitle}
               </p>
@@ -62,7 +85,10 @@ function HeroSec() {
             </div>
 
             {/* Image Section */}
-            <div className="order-1 sm:order-2 flex justify-center z-10">
+            <div
+              className="order-1 sm:order-2 flex justify-center z-10"
+              data-aos="fade-left"
+            >
               <img
                 src={item.imageUrl}
                 alt={item.title}
