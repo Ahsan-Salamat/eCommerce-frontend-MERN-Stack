@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart, User, Search, AlignCenter } from "lucide-react";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
-import { set } from "mongoose";
 
 function Navbar() {
   const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
