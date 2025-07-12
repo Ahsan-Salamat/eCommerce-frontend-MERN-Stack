@@ -61,7 +61,7 @@ function CategorySec() {
       {categories.map((cat) => (
         <div
           key={cat.id}
-          className={`h-80 rounded-2xl bg-gradient-to-b ${cat.gradient} ${
+          className={`h-65 md:h-80 rounded-2xl bg-gradient-to-b ${cat.gradient} ${
             cat.span === 2 ? "md:col-span-2" : ""
           } flex text-gray-800 text-center p-4 transform hover:scale-[1.03] transition-all duration-500 shadow-md hover:shadow-xl ${
             cat.customClasses
