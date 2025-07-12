@@ -53,7 +53,7 @@ function HeroSec() {
           exit="exit"
           className="container bg-gradient-to-r from-zinc-300/80 to-zinc-100 rounded-2xl overflow-hidden"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 h-[100vh] md:h-[85vh] container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 h-[80vh] md:h-[85vh] container mx-auto px-4">
             {/* Text Section */}
             <motion.div
               className="flex flex-col items-start gap-3 justify-center text-left order-2 sm:order-1 max-w-xl relative z-10"
